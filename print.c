@@ -10,11 +10,12 @@ void print_buffer(char buffer[], int *buff_ind);
  */
 int _printf(const char *format, ...)
 {
-	int i, printed_chars = 0;
+	char buffer[BUFF_SIZE];
+    int i, printed_chars = 0;
 	int flags, width, precision, size, buff_ind = 0;
 	va_list list;
 	va_start (list, format);
-     buffer[BUFF_SIZE];
+    
 
 	if (format == NULL)
 		return (-1);
